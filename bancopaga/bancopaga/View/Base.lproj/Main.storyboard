@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="af3-Tl-7Mu">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bancos App-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="bancopaga" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="k2J-ZA-PjH">
+                                <rect key="frame" x="15" y="103" width="363" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="N8n-jp-YEI">
+                                        <rect key="frame" x="0.0" y="10.999999999999996" width="30" height="28.333333333333332"/>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="0aS-sk-8uA"/>
+                                            <constraint firstAttribute="height" constant="30" id="EkA-57-GZ5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Buscar Banco" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nnn-uI-Ct1">
+                                        <rect key="frame" x="30" y="8" width="333" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qEE-UO-zvh"/>
+                                </constraints>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VvH-a1-FmV">
+                                <rect key="frame" x="15" y="153" width="363" height="665"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celda" textLabel="HYW-8Y-d4Y" detailTextLabel="uht-4g-5aE" rowHeight="114" style="IBUITableViewCellStyleSubtitle" id="C1h-dL-Hq8">
+                                        <rect key="frame" x="0.0" y="50" width="363" height="114"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C1h-dL-Hq8" id="jV3-3f-KxF">
+                                            <rect key="frame" x="0.0" y="0.0" width="363" height="114"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HYW-8Y-d4Y">
+                                                    <rect key="frame" x="20" y="41" width="25" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uht-4g-5aE">
+                                                    <rect key="frame" x="19.999999999999996" y="57.333333333333336" width="43.666666666666664" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VvH-a1-FmV" secondAttribute="bottom" id="A3V-RR-Cm6"/>
+                            <constraint firstItem="VvH-a1-FmV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="KeG-Zv-WjZ"/>
+                            <constraint firstItem="VvH-a1-FmV" firstAttribute="top" secondItem="k2J-ZA-PjH" secondAttribute="bottom" id="T6T-In-SjR"/>
+                            <constraint firstItem="k2J-ZA-PjH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="Zcx-hQ-M2c"/>
+                            <constraint firstItem="k2J-ZA-PjH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bOG-xm-3wY"/>
+                            <constraint firstAttribute="trailing" secondItem="k2J-ZA-PjH" secondAttribute="trailing" constant="15" id="iYj-IQ-wat"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VvH-a1-FmV" secondAttribute="trailing" constant="15" id="jZV-KN-Zhc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bancos App" id="7Zb-nQ-F8u"/>
+                    <connections>
+                        <outlet property="bucarBancosTextField" destination="nnn-uI-Ct1" id="QDd-Nz-h2R"/>
+                        <outlet property="tableBank" destination="VvH-a1-FmV" id="0iQ-o6-L33"/>
+                        <segue destination="ii9-d2-Oth" kind="show" identifier="detalles" id="SlL-jY-GYB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947.32824427480909" y="3.5211267605633805"/>
+        </scene>
+        <!--Detalle del Banco-->
+        <scene sceneID="28N-gM-U2i">
+            <objects>
+                <viewController id="ii9-d2-Oth" customClass="DetailBankViewController" customModule="bancopaga" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PpU-Eg-ZG1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BBVA Bancomer Creando Oportunidades" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypr-8p-j2i">
+                                <rect key="frame" x="40" y="171" width="313" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="X27-1l-248"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Años de Servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEh-Bn-nrj">
+                                <rect key="frame" x="131" y="459" width="128" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="boR-De-zJP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jn2-hA-ocN">
+                                <rect key="frame" x="161" y="511" width="68" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7au-3h-lOp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X7Z-JL-Uam">
+                                <rect key="frame" x="75" y="246" width="240" height="181"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="181" id="0wu-rO-e6q"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BBVA Bancomer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5U1-kU-Xz8">
+                                <rect key="frame" x="116" y="110" width="161" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5BI-Lc-cGZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pyc-rZ-aXw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ypr-8p-j2i" firstAttribute="centerX" secondItem="Jn2-hA-ocN" secondAttribute="centerX" constant="1.5" id="7ci-sg-Z1q"/>
+                            <constraint firstItem="Jn2-hA-ocN" firstAttribute="baseline" secondItem="jEh-Bn-nrj" secondAttribute="baseline" constant="52" id="Ajo-A4-bIZ"/>
+                            <constraint firstItem="Jn2-hA-ocN" firstAttribute="leading" secondItem="Pyc-rZ-aXw" secondAttribute="leading" constant="161" id="PGR-4p-BUb"/>
+                            <constraint firstItem="X7Z-JL-Uam" firstAttribute="leading" secondItem="Pyc-rZ-aXw" secondAttribute="leading" constant="75" id="Rin-9b-LFU"/>
+                            <constraint firstItem="ypr-8p-j2i" firstAttribute="centerX" secondItem="5U1-kU-Xz8" secondAttribute="centerX" id="YPw-Ev-U0f"/>
+                            <constraint firstItem="ypr-8p-j2i" firstAttribute="leading" secondItem="Pyc-rZ-aXw" secondAttribute="leading" constant="40" id="ak8-F1-6Lo"/>
+                            <constraint firstItem="ypr-8p-j2i" firstAttribute="top" secondItem="5U1-kU-Xz8" secondAttribute="bottom" constant="21" id="cN5-9y-4ik"/>
+                            <constraint firstItem="ypr-8p-j2i" firstAttribute="top" secondItem="PpU-Eg-ZG1" secondAttribute="top" constant="171" id="d0S-6m-Aym"/>
+                            <constraint firstItem="jEh-Bn-nrj" firstAttribute="top" secondItem="X7Z-JL-Uam" secondAttribute="bottom" constant="32" id="eG4-Px-a4d"/>
+                            <constraint firstItem="X7Z-JL-Uam" firstAttribute="top" secondItem="ypr-8p-j2i" secondAttribute="bottom" constant="35" id="fVk-Mk-qgG"/>
+                            <constraint firstItem="X7Z-JL-Uam" firstAttribute="centerX" secondItem="jEh-Bn-nrj" secondAttribute="centerX" id="iHK-kF-Ieu"/>
+                            <constraint firstItem="Pyc-rZ-aXw" firstAttribute="trailing" secondItem="X7Z-JL-Uam" secondAttribute="trailing" constant="78" id="lMi-H3-Kjr"/>
+                            <constraint firstItem="ypr-8p-j2i" firstAttribute="centerX" secondItem="PpU-Eg-ZG1" secondAttribute="centerX" id="tMY-jY-dSd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detalle del Banco" id="TU1-T5-TXf"/>
+                    <connections>
+                        <outlet property="ageLabel" destination="Jn2-hA-ocN" id="MbG-zh-yv3"/>
+                        <outlet property="descriptionLabel" destination="ypr-8p-j2i" id="0Uk-cf-fEN"/>
+                        <outlet property="imageToLoad" destination="X7Z-JL-Uam" id="vcs-mg-AmL"/>
+                        <outlet property="nombreLabel" destination="5U1-kU-Xz8" id="zA7-2f-6bB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jt7-LB-lJ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837.4045801526718" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FX9-fk-Abf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="af3-Tl-7Mu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6zz-Nm-dhm">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fFt-LK-MbJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IoX-L9-sz9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
