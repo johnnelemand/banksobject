@@ -100,6 +100,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d730ca6afada7a659b57c6ec9a72638e" translatesAutoresizingMaskIntoConstraints="NO" id="iZj-MH-euI">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BBVA Bancomer Creando Oportunidades" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypr-8p-j2i">
                                 <rect key="frame" x="40" y="171" width="313" height="40"/>
                                 <constraints>
@@ -144,18 +147,22 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Pyc-rZ-aXw"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ypr-8p-j2i" firstAttribute="centerX" secondItem="Jn2-hA-ocN" secondAttribute="centerX" constant="1.5" id="7ci-sg-Z1q"/>
                             <constraint firstItem="Jn2-hA-ocN" firstAttribute="baseline" secondItem="jEh-Bn-nrj" secondAttribute="baseline" constant="52" id="Ajo-A4-bIZ"/>
+                            <constraint firstItem="iZj-MH-euI" firstAttribute="leading" secondItem="Pyc-rZ-aXw" secondAttribute="leading" id="HVf-0P-YbU"/>
                             <constraint firstItem="Jn2-hA-ocN" firstAttribute="leading" secondItem="Pyc-rZ-aXw" secondAttribute="leading" constant="161" id="PGR-4p-BUb"/>
                             <constraint firstItem="X7Z-JL-Uam" firstAttribute="leading" secondItem="Pyc-rZ-aXw" secondAttribute="leading" constant="75" id="Rin-9b-LFU"/>
                             <constraint firstItem="ypr-8p-j2i" firstAttribute="centerX" secondItem="5U1-kU-Xz8" secondAttribute="centerX" id="YPw-Ev-U0f"/>
+                            <constraint firstAttribute="bottom" secondItem="iZj-MH-euI" secondAttribute="bottom" id="YpI-P0-cyg"/>
                             <constraint firstItem="ypr-8p-j2i" firstAttribute="leading" secondItem="Pyc-rZ-aXw" secondAttribute="leading" constant="40" id="ak8-F1-6Lo"/>
                             <constraint firstItem="ypr-8p-j2i" firstAttribute="top" secondItem="5U1-kU-Xz8" secondAttribute="bottom" constant="21" id="cN5-9y-4ik"/>
                             <constraint firstItem="ypr-8p-j2i" firstAttribute="top" secondItem="PpU-Eg-ZG1" secondAttribute="top" constant="171" id="d0S-6m-Aym"/>
                             <constraint firstItem="jEh-Bn-nrj" firstAttribute="top" secondItem="X7Z-JL-Uam" secondAttribute="bottom" constant="32" id="eG4-Px-a4d"/>
                             <constraint firstItem="X7Z-JL-Uam" firstAttribute="top" secondItem="ypr-8p-j2i" secondAttribute="bottom" constant="35" id="fVk-Mk-qgG"/>
+                            <constraint firstItem="iZj-MH-euI" firstAttribute="trailing" secondItem="Pyc-rZ-aXw" secondAttribute="trailing" id="gJi-27-LqA"/>
+                            <constraint firstItem="iZj-MH-euI" firstAttribute="top" secondItem="PpU-Eg-ZG1" secondAttribute="top" id="gcs-kZ-8NE"/>
                             <constraint firstItem="X7Z-JL-Uam" firstAttribute="centerX" secondItem="jEh-Bn-nrj" secondAttribute="centerX" id="iHK-kF-Ieu"/>
                             <constraint firstItem="Pyc-rZ-aXw" firstAttribute="trailing" secondItem="X7Z-JL-Uam" secondAttribute="trailing" constant="78" id="lMi-H3-Kjr"/>
                             <constraint firstItem="ypr-8p-j2i" firstAttribute="centerX" secondItem="PpU-Eg-ZG1" secondAttribute="centerX" id="tMY-jY-dSd"/>
@@ -193,6 +200,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="d730ca6afada7a659b57c6ec9a72638e" width="1420" height="3073"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
